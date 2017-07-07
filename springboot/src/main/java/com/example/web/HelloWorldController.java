@@ -28,6 +28,7 @@ public class HelloWorldController {
 
     @GetMapping(value = "/getAll")
     public List<User> getUserList(){
+        System.out.println("test github");
         return userRepository.findAll();
     }
 }
